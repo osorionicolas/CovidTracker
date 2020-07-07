@@ -7,6 +7,7 @@ import retrofit2.http.GET;
 
 public interface GetCovidSummary {
 
-    @GET("/summary")
+    //@GET("/summary")
+    @GET("/data/9043/global-covid19-who-gis.json")
     Call<JsonObject> getSummary();
 }

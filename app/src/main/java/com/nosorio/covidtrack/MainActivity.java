@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.i("Initializing", "Starting app...");
 
-        CovidService service = new CovidService();
-        service.getCovidSummary(MainActivity.this);
+        CovidService service = new CovidService(MainActivity.this);
+        service.getCovidSummary();
         setContentView(R.layout.activity_main);
     }
 }
